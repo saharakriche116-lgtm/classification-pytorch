@@ -106,6 +106,9 @@ if __name__ == "__main__":
                         help="Path to dataset")
     parser.add_argument("--model_path", type=str, default="./models/",
                         help="Directory to save or load the model")
+    parser.add_argument("--use_mlflow", action="store_true",
+                    help="Enable MLflow logging")
+
 
     args = parser.parse_args()
     main(args)
